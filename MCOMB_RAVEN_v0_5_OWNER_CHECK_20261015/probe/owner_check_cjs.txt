@@ -1,0 +1,26 @@
+PASS  Eisenstein closure: all clip walks closed exactly (integer check, W1)  (1956/1956 closed (14 eye walks, 785 luminous feather/scute walks); bridge teeth 465; clip teeth 314246)
+PASS  ink lines: every q an integer in [0, 10080); open fine walks  (700 ink lines, 27856 phasors (40 edge + 232 ridge + 153 foot + 275 bark); tracking error max 0.6738 px, mean 0.05246 px (numerical))
+PASS  tone turn identities (arc: constant b; curlicue: A*k) on integers, all families  (T0 arc 9183 strokes; L0 arc 17640 strokes; L1 arc 5757 strokes; L2 arc 8506 strokes; L3 arc 8936 strokes; L3 curlicue 1241 strokes; L4 arc 11673 strokes; L4 curlicue 1155 strokes; bark arc 4190 strokes; E110 arc 390 strokes; E60 arc 295 strokes)
+PASS  renderer never strokes a clip walk (stroked by role: clip / ink / tone)  (clip 0, ink 700, tone 1444)
+PASS  light holes stay paper in their family and darker (10 holes)  (stroke 617 L2 alpha 0/0/0/0/0; stroke 360 L1 alpha 0/0/0/0/0/0; stroke 124 L0 alpha 0/0/0/0/0/0/0; stroke 511 L2 alpha 0/0/0/0/0; stroke 254 L1 alpha 0/0/0/0/0/0; stroke 469 L2 alpha 0/0/0/0/0; stroke 846 L3 alpha 0/0/0/0; stroke 506 L2 alpha 0/0/0/0/0; stroke 1075 L4 alpha 0/0; stroke 1102 L4 alpha 0/0)
+  tone table (mean luminance, exclusive bands, source vs composite at source resolution):
+    L0  pixels 60956  source 133.0  composite 134.0  diff 1.0
+    L1  pixels 77240  source 108.0  composite 105.1  diff -2.9
+    L2  pixels 118050  source 81.0  composite 75.2  diff -5.8
+    L3  pixels 140229  source 54.2  composite 47.8  diff -6.4
+    L4  pixels 148915  source 26.2  composite 35.6  diff 9.3
+PASS  tone bands within 30 luminance levels of the source  (L0 1.0, L1 -2.9, L2 -5.8, L3 -6.4, L4 9.3)
+  per-region tone table (mean luminance, source vs composite at source resolution):
+    wing    pixels 128096  source 87.8  composite 89.5  diff 1.7
+    head    pixels 53491  source 86.4  composite 93.4  diff 7.0
+    breast  pixels 135761  source 71.2  composite 69.1  diff -2.1
+    tail    pixels 146510  source 73.5  composite 69.0  diff -4.5
+    branch  pixels 148916  source 180.1  composite 186.1  diff 6.0
+PASS  per-region tone (inside silhouette): wing, head, breast, tail within 12 levels, branch within 15  (wing 1.7, head 7.0, breast -2.1, tail -4.5, branch 6.0)
+PASS  paper holes: at least 97% of interior pixels (3 px inside) have luminance > 240 in the composite (17 testable holes)  (all testable holes pass)
+PASS  beak: upper edge (forehead to tip) and lower mandible are one continuous ink line  (tip at (1047.1,203.3))
+PASS  no tone-stroke pixel outside silhouette200 within 10 px of the beak hard-edge lines  (0 pixels, max alpha 0)
+PASS  feet: at least 6 ink lines start inside the feet region  (145 ink lines in the feet region (153 of kind foot))
+PASS  zero non-file network requests
+PASS  zero console errors
+RESULT: all PASS

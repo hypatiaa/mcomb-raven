@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>mcomb · raven</title>
+<style>
+/*STYLE*/
+</style>
+</head>
+<body>
+<h1>mcomb · raven</h1>
+<div id="main"><div id="left"><div id="wrap"><canvas id="cv" aria-label="Raven drawn by a comb of rotating arms"></canvas></div></div>
+<div id="right">
+
+<div class="row" id="transport">
+  <button id="play" type="button">Play</button>
+  <button id="restart" type="button">Restart</button>
+  <button id="complete" type="button">Complete</button>
+  <label class="grow">s <input id="s" type="range" min="0" max="1000" step="1" value="0"></label>
+  <label>Speed <select id="speed">
+    <option value="0.25">0.25x</option><option value="0.5">0.5x</option><option value="1" selected>1x</option><option value="2">2x</option><option value="4">4x</option></select></label>
+</div>
+
+<div class="panel" id="readouts" aria-live="polite">
+  <div id="r1"></div><div id="r2"></div><div id="r3"></div>
+  <div id="status">ready</div>
+</div>
+
+<div class="panel">
+  <div class="row">
+    <label class="grow">Comb cap K <input id="cap" type="range" min="0" max="1000" step="1" value="1000"></label>
+    <output id="capv">K = 2500</output>
+  </div>
+  <div class="row">
+    <span class="lbl">View</span>
+    <span class="seg" id="viewseg"><button type="button" data-v="lines" aria-pressed="true">Lines</button><button type="button" data-v="tone" aria-pressed="false">Tone</button></span>
+    <span class="lbl">Arms</span>
+    <span class="seg" id="armseg"><button type="button" data-a="outline" aria-pressed="true">Outline</button><button type="button" data-a="next" aria-pressed="false">Next stroke</button><button type="button" data-a="off" aria-pressed="false">Off</button></span>
+  </div>
+  <div class="row">
+    <label><input id="teeth" type="checkbox"> Unit teeth</label>
+    <label>Scale <select id="tscale"><option value="0.25">0.25 teeth/px</option><option value="1" selected>1 tooth/px</option><option value="4">4 teeth/px</option></select></label>
+  </div>
+  <div class="note" id="teethnote">Unit teeth: radii rounded to whole unit teeth, phases on the &zeta;<sub>4N</sub> grid (a numerical rounding step); every rotation is an exact root of unity.</div>
+  <div class="row">
+    <button id="png" type="button">Export PNG</button>
+    <button id="json" type="button">Export JSON</button>
+    <button id="about" type="button" aria-expanded="false">(i) About</button>
+  </div>
+</div>
+
+<div id="aboutbox" class="panel" hidden>
+  <p><b>What you see.</b> Each stroke of the drawing is one comb of rotating arms (epicycles). The comb length m = 2K+1 is the number of circles; the outline uses up to 5001. All 1120 combs turn together for one lap and close at s = 1. The cyan chain is the arm chain of the selected stroke; the amber dot is its tip.</p>
+  <p><b>Credits.</b> Drawing: saphir. Instrument: mcomb (comb-hopf family). Program: Opus (Claude Opus 5.5).</p>
+  <p><b>Limits.</b> The drawing is traced by threshold and tone levels, so it is a posterised picture. The light patch under the belly is paper enclosed by legs and branch, not yet a hole.</p>
+</div>
+
+<p class="note" id="registers">Traced coefficients c_k: numerical (from the drawing). Rotations e^{2&pi;iks}: exact roots of unity; drawn in floating point (drawing register).</p>
+</div></div>
+<script>
+/*DATA*/
+</script>
+<script>
+/*APP*/
+</script>
+</body>
+</html>

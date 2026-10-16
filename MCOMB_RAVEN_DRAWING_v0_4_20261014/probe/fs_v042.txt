@@ -1,0 +1,16 @@
+PASS  [1280x800] canvas fills the screen (contain): 667x800 in 1280x800; backing 1333x1600
+PASS  [1280x800] overlay buttons visible on screen
+PASS  [1280x800] Play from the overlay advances s (slider 66/1000)
+PASS  [1280x800] exit restores the normal layout (no horizontal scroll)
+PASS  [1280x800] zero console errors 
+PASS  [375x812] canvas fills the screen (contain): 375x450 in 375x812; backing 750x900
+PASS  [375x812] overlay buttons visible on screen
+PASS  [375x812] Play from the overlay advances s (slider 66/1000)
+PASS  [375x812] exit restores the normal layout (no horizontal scroll)
+PASS  [375x812] zero console errors 
+PASS  [812x375] canvas fills the screen (contain): 313x375 in 812x375; backing 625x750
+PASS  [812x375] overlay buttons visible on screen
+PASS  [812x375] Play from the overlay advances s (slider 67/1000)
+PASS  [812x375] exit restores the normal layout (no horizontal scroll)
+PASS  [812x375] zero console errors 
+RESULT: all PASS

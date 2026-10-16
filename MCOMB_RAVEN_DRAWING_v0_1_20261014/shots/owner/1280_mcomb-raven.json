@@ -1,0 +1,29 @@
+{
+  "program": "mcomb · raven",
+  "schema": "mcomb-raven-export/0.1",
+  "state": {
+    "cap": 2500,
+    "s": 1,
+    "view": "lines",
+    "armsMode": "outline",
+    "armsStrokeIndex": 0,
+    "unitTeeth": false,
+    "teethPerPx": 1
+  },
+  "readouts": {
+    "strokes": 1120,
+    "circlesInUse": 186684,
+    "outlineM": 5001,
+    "selected": {
+      "index": 0,
+      "N": 16384,
+      "K": 2500,
+      "perimeter": 8786.3
+    },
+    "totalTeeth": null
+  },
+  "dataSchema": "mcomb-raven-data/0.1",
+  "sourceSha256": "37a8c4b6b260ba613c14504045f6ee57bc44254ec983e84e6dbd4c40c33f6c4d",
+  "credit": "Drawing: saphir. Instrument: mcomb (comb-hopf family). Program: Opus (Claude Opus 5.5)",
+  "registers": "Traced coefficients c_k: numerical. Rotations e^{2 pi i k s}: exact roots of unity; drawn in floating point."
+}

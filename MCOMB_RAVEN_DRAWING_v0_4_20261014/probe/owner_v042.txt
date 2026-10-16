@@ -1,0 +1,12 @@
+[1280] buttons: ["Play","Restart","Exit full screen","Play","Restart","Complete","Full screen","Longest line","Next line","Off","Export PNG","Export JSON","(i) About"] inputs: ["s","speed","mw","tones"]
+[1280] s before/after 3 s play: 0.0000 -> 0.1006
+[1280] range inputs: 2
+[1280] export /png/i: mcomb-raven-exact.png 1070975 bytes
+[1280] export /json/i: mcomb-raven-exact.json 466227 bytes
+[1280] console errors: 0 []
+[375] buttons: ["Play","Restart","Exit full screen","Play","Restart","Complete","Full screen","Longest line","Next line","Off","Export PNG","Export JSON","(i) About"] inputs: ["s","speed","mw","tones"]
+[375] s before/after 3 s play: 0.0000 -> 0.1000
+[375] range inputs: 2
+[375] export /png/i: mcomb-raven-exact.png 1070975 bytes
+[375] export /json/i: mcomb-raven-exact.json 466227 bytes
+[375] console errors: 0 []

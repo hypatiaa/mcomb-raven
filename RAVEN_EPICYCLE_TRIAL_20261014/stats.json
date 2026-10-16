@@ -1,0 +1,59 @@
+{
+ "source_size": [
+  1145,
+  1374
+ ],
+ "contour_pixels": 5195,
+ "perimeter_px": 6296.393862350147,
+ "M": 1024,
+ "recon": [
+  {
+   "K": 1,
+   "circles_m": 3,
+   "mean_err_px": 130.73171882838759
+  },
+  {
+   "K": 3,
+   "circles_m": 7,
+   "mean_err_px": 47.36973899260765
+  },
+  {
+   "K": 8,
+   "circles_m": 17,
+   "mean_err_px": 29.3769390392216
+  },
+  {
+   "K": 20,
+   "circles_m": 41,
+   "mean_err_px": 11.694856934933242
+  },
+  {
+   "K": 60,
+   "circles_m": 121,
+   "mean_err_px": 3.297121570683238
+  },
+  {
+   "K": 200,
+   "circles_m": 401,
+   "mean_err_px": 0.6949087784935866
+  }
+ ],
+ "integer_comb": [
+  {
+   "K": 60,
+   "scale_teeth_per_px": 0.25,
+   "phase_grid_L": 4096,
+   "total_teeth": 504,
+   "arms_nonzero": 52,
+   "mean_err_px": 10.866851466957986
+  },
+  {
+   "K": 60,
+   "scale_teeth_per_px": 1.0,
+   "phase_grid_L": 4096,
+   "total_teeth": 2065,
+   "arms_nonzero": 102,
+   "mean_err_px": 4.494503393438239
+  }
+ ]
+}

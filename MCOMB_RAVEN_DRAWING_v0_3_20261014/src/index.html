@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>mcomb · raven</title>
+<style>
+/*STYLE*/
+</style>
+</head>
+<body>
+<h1>mcomb · raven</h1>
+<div id="main"><div id="left"><div id="wrap"><canvas id="cv" aria-label="Raven drawn by exact integer teeth and curlicue tones"></canvas><div id="fsbar" hidden><button id="fsplay" type="button">Play</button><button id="fsrestart" type="button">Restart</button><button id="fsexit" type="button" aria-label="Exit full screen">Exit full screen</button></div></div></div>
+<div id="right">
+<div class="row" id="transport">
+  <button id="play" type="button">Play</button>
+  <button id="restart" type="button">Restart</button>
+  <button id="complete" type="button">Complete</button>
+  <button id="fs" type="button" aria-pressed="false">Full screen</button>
+  <label class="grow">s <input id="s" type="range" min="0" max="1000" step="1" value="0"></label>
+  <label>Speed <select id="speed">
+    <option value="0.25">0.25x</option><option value="0.5">0.5x</option><option value="1" selected>1x</option><option value="2">2x</option><option value="4">4x</option></select></label>
+</div>
+
+<div class="panel" id="readouts" aria-live="polite">
+  <div id="p1"></div><div id="p2"></div><div id="p3"></div><div id="p5"></div><div id="p6"></div><div id="p7"></div>
+  <details><summary>Details</summary><div id="p3b"></div><div id="p3c"></div><div id="p4"></div><div id="p8"></div></details>
+  <div id="status">computing…</div>
+</div>
+
+<div class="panel">
+  <div class="row">
+    <label class="grow">Comb window m <input id="mw" type="range" min="1" max="30" step="1" value="7"></label>
+    <output id="mwv">m = 15</output>
+  </div>
+  <div class="row">
+    <span class="lbl">Pen</span>
+    <span class="seg" id="armseg"><button type="button" data-a="outline" aria-pressed="true">Outline</button><button type="button" data-a="next" aria-pressed="false">Next stroke</button><button type="button" data-a="off" aria-pressed="false">Off</button></span>
+  </div>
+  <div class="row">
+    <label><input id="bridges" type="checkbox"> Show bridges</label>
+    <label><input id="tones" type="checkbox" checked> Curlicue tones</label>
+  </div>
+  <div class="row">
+    <button id="png" type="button">Export PNG</button>
+    <button id="json" type="button">Export JSON</button>
+    <button id="about" type="button" aria-expanded="false">(i) About</button>
+  </div>
+</div>
+
+<div id="aboutbox" class="panel" hidden>
+  <p><b>What it is.</b> Each traced stroke is a closed walk of cyclotomic phasors (unit teeth ζ^q, integer q) on the Eisenstein lattice, and these still close exactly (integer certificate). The eye is traced as its own strokes, and its dark parts are hatched densely around the centre while the highlight stays paper. The tones are open strokes laid along the hatching direction of the drawing, like pen work: plain comb arcs (linear phase) cross-hatched at 60° steps for the mid and dark tones, and open curlicues (quadratic phase, a discrete Euler spiral whose turn between phasors is A·k) as accents in the darkest areas. Tone strokes do not close, by design. Epicycles were always a kludge; these are cyclotomic phasors. The cyan arrows are the comb window, the last m phasors before the pen tip; the amber chord is their exact resultant.</p>
+  <p><b>Why it matters.</b> Closure of the traced lines is certified in exact integer arithmetic, every tone phasor is an integer phase, and the file is small.</p>
+  <p><b>Credits.</b> Instrument: mcomb (cyclotomic phasors). Curlicue idea: Gemini (vision seat). Program: Opus (Claude Opus 5.5).</p>
+  <p><b>Limits.</b> The tracing is numerical (a threshold and five tone levels). The bridges are tiny but present. Tone strokes are placed on lattices with integer sub-lattice offsets and headings from a numerically traced orientation grid; spacing, alpha and the extra cross-hatching families are drawing-register choices. The light area under the belly is enclosed paper, part of the outline region.</p>
+</div>
+<p class="note" id="registers">Tracing: numerical (from the drawing). Phasors, vertices, closure, tone strokes: exact integers in ℤ[ζ₆] and ℤ[ζ₁₀₀₈₀]. Drawing: floating point (drawing register).</p>
+</div></div>
+<script id="datascript">
+/*DATA*/
+</script>
+<script>
+/*APP*/
+</script>
+</body>
+</html>

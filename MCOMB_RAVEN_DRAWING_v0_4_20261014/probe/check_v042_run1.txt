@@ -1,0 +1,87 @@
+PASS  Eisenstein closure: all clip walks closed exactly (integer check, W1)  (1171/1171 closed (14 eye walks); bridge teeth 241; clip teeth 267072)
+PASS  ink lines: every q an integer in [0, 10080); open fine walks  (167 ink lines, 7351 phasors (39 edge + 25 ridge); tracking error max 0.2625 px, mean 0.09134 px (numerical))
+PASS  tone turn identities (arc: constant b; curlicue: A*k) on integers, all families  (T0 arc 7751 strokes x 20 lengths 7-45 teeth; L0 arc 12911 strokes x 20 lengths 7-45 teeth; L1 arc 4636 strokes x 20 lengths 7-45 teeth; L2 arc 5790 strokes x 20 lengths 7-45 teeth; L3 arc 5974 strokes x 20 lengths 7-45 teeth; L3 curlicue 1315 strokes x 60 teeth; L4 arc 8622 strokes x 20 lengths 7-45 teeth; L4 curlicue 1202 strokes x 70 teeth; bark arc 4891 strokes x 20 lengths 7-45 teeth; E110 arc 390 strokes x 7 teeth; E60 arc 295 strokes x 7 teeth)
+PASS  renderer never strokes a clip walk (stroked by role: clip / ink / tone)  (clip 0, ink 167, tone 1126)
+PASS  light holes stay paper in their family and darker (10 holes)  (stroke 633 L2 area 12205 at (645.8,953.1) alpha 0/0/0/0/0; stroke 372 L1 area 10071 at (650.3,957.5) alpha 0/0/0/0/0/0; stroke 126 L0 area 9144 at (652.3,956.8) alpha 0/0/0/0/0/0/0; stroke 527 L2 area 32690 at (629.4,407.8) alpha 0/0/0/0/0; stroke 266 L1 area 7143 at (679.3,407.2) alpha 0/0/0/0/0/0; stroke 485 L2 area 2941 at (721.8,162.2) alpha 0/0/0/0/0; stroke 855 L3 area 5004 at (401.3,735.3) alpha 0/0/0/0; stroke 522 L2 area 6908 at (577.4,345.3) alpha 0/0/0/0/0; stroke 1078 L4 area 1578 at (827.8,573.3) alpha 0/0; stroke 1105 L4 area 3848 at (345.8,994.4) alpha 0/0)
+  tone table (mean luminance, exclusive bands, source vs composite at source resolution):
+    L0  pixels 63505  source 133.8  composite 124.8  diff -9.0
+    L1  pixels 78139  source 107.4  composite 94.2  diff -13.2
+    L2  pixels 116714  source 80.4  composite 73.7  diff -6.7
+    L3  pixels 139872  source 54.0  composite 53.6  diff -0.4
+    L4  pixels 149530  source 26.2  composite 38.8  diff 12.6
+PASS  tone bands within 30 luminance levels of the source  (L0 -9.0, L1 -13.2, L2 -6.7, L3 -0.4, L4 12.6)
+  per-region tone table (mean luminance, source vs composite at source resolution; boxes count only pixels inside silhouette200, branch = authored region):
+    wing    pixels 128095  source 87.8  composite 86.3  diff -1.5
+    head    pixels 53487  source 86.4  composite 96.3  diff 9.9
+    breast  pixels 135761  source 71.2  composite 70.3  diff -0.9
+    tail    pixels 146490  source 73.5  composite 71.3  diff -2.2
+    branch  pixels 148916  source 180.1  composite 189.4  diff 9.3
+PASS  per-region tone (inside silhouette): wing, head, breast, tail within 12 levels, branch within 15  (wing -1.5, head 9.9, breast -0.9, tail -2.2, branch 9.3)
+  paper-hole table (centroid and area of the hole; interior = pixels >= 3 px from the boundary; % = composite luminance > 240 at 1x; source mean over the whole hole):
+    hole stroke 1138  centroid (1042,910)  area 584 px  interior 26 px  100.0% > 240  source mean 234.2
+    hole stroke 1139  centroid (648,953)  area 7814 px  interior 6225 px  100.0% > 240  source mean 237.6
+    hole stroke 1140  centroid (502,1014)  area 19349 px  interior 16612 px  100.0% > 240  source mean 238.0
+    hole stroke 1141  centroid (980,1000)  area 476 px  interior 35 px  100.0% > 240  source mean 231.3
+    hole stroke 1142  centroid (869,1015)  area 1542 px  interior 648 px  100.0% > 240  source mean 228.9
+    hole stroke 1144  centroid (753,1041)  area 307 px  interior 33 px  100.0% > 240  source mean 231.6
+    hole stroke 1146  centroid (722,1048)  area 360 px  interior 97 px  100.0% > 240  source mean 230.2
+    hole stroke 1149  centroid (768,1058)  area 220 px  interior 18 px  100.0% > 240  source mean 234.9
+    hole stroke 1150  centroid (735,1071)  area 446 px  interior 141 px  100.0% > 240  source mean 232.1
+    hole stroke 1152  centroid (677,1090)  area 141 px  interior 11 px  100.0% > 240  source mean 232.8
+    hole stroke 1153  centroid (547,1114)  area 1827 px  interior 356 px  100.0% > 240  source mean 232.1
+    hole stroke 1154  centroid (619,1111)  area 756 px  interior 211 px  100.0% > 240  source mean 233.2
+    hole stroke 1156  centroid (1037,1136)  area 219 px  interior 17 px  100.0% > 240  source mean 235.4
+    hole stroke 1159  centroid (466,1174)  area 445 px  interior 13 px  100.0% > 240  source mean 233.4
+    hole stroke 1161  centroid (427,1211)  area 550 px  interior 148 px  100.0% > 240  source mean 235.6
+    hole stroke 1162  centroid (376,1225)  area 1557 px  interior 559 px  100.0% > 240  source mean 233.1
+    hole stroke 1167  centroid (354,1268)  area 206 px  interior 21 px  100.0% > 240  source mean 233.8
+  too small to test (fewer than 10 interior pixels), listed separately, not counted as passes:
+    hole stroke 1134  centroid (955,147)  area 182 px  interior 9 px  source mean 229.5
+    hole stroke 1135  centroid (1006,158)  area 275 px  interior 0 px  source mean 238.2
+    hole stroke 1136  centroid (1051,796)  area 166 px  interior 4 px  source mean 233.4
+    hole stroke 1137  centroid (1048,834)  area 301 px  interior 0 px  source mean 230.4
+    hole stroke 1143  centroid (944,1013)  area 187 px  interior 4 px  source mean 233.3
+    hole stroke 1145  centroid (927,1038)  area 189 px  interior 5 px  source mean 233.0
+    hole stroke 1147  centroid (883,1054)  area 189 px  interior 7 px  source mean 228.1
+    hole stroke 1148  centroid (802,1059)  area 281 px  interior 9 px  source mean 234.1
+    hole stroke 1151  centroid (521,1088)  area 483 px  interior 2 px  source mean 229.8
+    hole stroke 1155  centroid (486,1120)  area 213 px  interior 0 px  source mean 228.4
+    hole stroke 1157  centroid (532,1145)  area 199 px  interior 1 px  source mean 224.8
+    hole stroke 1158  centroid (546,1149)  area 121 px  interior 0 px  source mean 232.3
+    hole stroke 1160  centroid (415,1178)  area 136 px  interior 0 px  source mean 236.9
+    hole stroke 1163  centroid (457,1205)  area 144 px  interior 1 px  source mean 231.1
+    hole stroke 1164  centroid (295,1221)  area 196 px  interior 0 px  source mean 237.8
+    hole stroke 1165  centroid (440,1224)  area 182 px  interior 4 px  source mean 233.1
+    hole stroke 1166  centroid (251,1235)  area 154 px  interior 0 px  source mean 236.3
+PASS  paper holes: at least 97% of interior pixels (3 px inside) have luminance > 240 in the composite (17 testable holes, 17 too small to test)  (all testable holes pass; minimum 100.0%)
+PASS  beak: upper edge (forehead to tip) and lower mandible are one continuous ink line (other ink lines in the beak zone are paper-hole boundaries)  (ink edge lines in the beak zone: line 31 = 613 phasors (px); line 32 = 113 phasors (px); tip at (1047.1,203.3))
+PASS  no tone-stroke pixel outside silhouette200 within 10 px of the beak hard-edge lines (1 px antialiasing allowance)  (0 pixels, max alpha 0)
+PASS  feet: at least 6 ink lines start inside the feet region  (27 ink lines in the feet region (24 of kind foot))
+PASS  all text font-size >= 13 px
+PASS  1280x800: canvas bottom and Play within viewport, no scroll  ({"cb":757.796875,"pt":226.796875,"pb":266.796875,"vh":800,"sy":0})
+PASS  1280x800: comb-window inset does not overlap the drawing canvas  (inset 624,49,794,219 canvas 17,50,607,758)
+PASS  1280x800: full screen, inset covers no drawing pixels  (corner top-left, non-empty samples under the inset 0, inset 8,8,232,232)
+  shot 1280x800 initial 375 ms
+  shot 1280x800 s03_pen_longest_line 318 ms
+  shot 1280x800 s06_lines_complete 303 ms
+  shot 1280x800 s08_tones_growing 853 ms
+  shot 1280x800 complete 850 ms
+  shot 1280x800 complete_tones_off 351 ms
+  shot 1280x800 complete_ink_only 318 ms
+PASS  375x812: Play within viewport after canvas scrolled into view  ({"cb":409.390625,"pt":576.390625,"pb":616.390625,"vh":812,"sy":50})
+PASS  no horizontal scroll at 375 px  (scrollWidth 375 vs 375)
+PASS  375x812: comb-window inset does not overlap the drawing canvas  (inset 16,418,166,568 canvas 17,0,358,409)
+PASS  375x812: full screen, inset covers no drawing pixels  (corner top-left, non-empty samples under the inset 0, inset 8,8,113,113)
+  shot 375x812 initial 373 ms
+  shot 375x812 s03_pen_longest_line 333 ms
+  shot 375x812 s06_lines_complete 329 ms
+  shot 375x812 s08_tones_growing 742 ms
+  shot 375x812 complete 786 ms
+  shot 375x812 complete_tones_off 337 ms
+  shot 375x812 complete_ink_only 325 ms
+PASS  eye highlight box (799-807 x 119-127): paper (lum > 200) in >= 25% of pixels at 3x DPR  (54.5% of 156 px, dpr 3)
+PASS  eye ring (radius 5-17, highlight box excluded): dark (lum < 110) in >= 50% of pixels at 3x DPR  (84.5% of 1839 px)
+PASS  screenshots (14 + 3x head, eye and wing crops)  (shots/)
+PASS  zero non-file network requests
+PASS  zero console errors
+RESULT: all PASS
